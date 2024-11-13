@@ -1,19 +1,19 @@
 "use client";
 
-import { LoadingSVG } from "@/components/button/LoadingSVG";
-import { ChatMessageType } from "@/components/chat/ChatTile";
-import { ColorPicker } from "@/components/colorPicker/ColorPicker";
-import { AudioInputTile } from "@/components/config/AudioInputTile";
-import { ConfigurationPanelItem } from "@/components/config/ConfigurationPanelItem";
-import { NameValueRow } from "@/components/config/NameValueRow";
-import { PlaygroundHeader } from "@/components/playground/PlaygroundHeader";
+import { LoadingSVG } from "../../components/button/LoadingSVG";
+import { ChatMessageType } from "../../components/chat/ChatTile";
+import { ColorPicker } from "../../components/colorPicker/ColorPicker";
+import { AudioInputTile } from "../../components/config/AudioInputTile";
+import { ConfigurationPanelItem } from "../../components/config/ConfigurationPanelItem";
+import { NameValueRow } from "../../components/config/NameValueRow";
+import { PlaygroundHeader } from "../../components/playground/PlaygroundHeader";
 import {
   PlaygroundTab,
   PlaygroundTabbedTile,
   PlaygroundTile,
-} from "@/components/playground/PlaygroundTile";
-import { useConfig } from "@/hooks/useConfig";
-import { TranscriptionTile } from "@/transcriptions/TranscriptionTile";
+} from "../../components/playground/PlaygroundTile";
+import { useConfig } from "../../hooks/useConfig";
+import { TranscriptionTile } from "../../transcriptions/TranscriptionTile";
 import {
   BarVisualizer,
   VideoTrack,
@@ -148,7 +148,6 @@ export default function Playground({
   useEffect(() => {
     document.body.style.setProperty(
       "--lk-theme-color",
-      // @ts-ignore
       tailwindTheme.colors[config.settings.theme_color]["500"]
     );
     document.body.style.setProperty(

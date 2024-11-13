@@ -1,9 +1,10 @@
-import { Button } from "@/components/button/Button";
-import { LoadingSVG } from "@/components/button/LoadingSVG";
-import { SettingsDropdown } from "@/components/playground/SettingsDropdown";
-import { useConfig } from "@/hooks/useConfig";
+import { Button } from "../button/Button";
+import { LoadingSVG } from "../button/LoadingSVG";
+import { SettingsDropdown } from "./SettingsDropdown";
+import { useConfig } from "../../hooks/useConfig";
 import { ConnectionState } from "livekit-client";
 import { ReactNode } from "react";
+
 
 type PlaygroundHeader = {
   logo?: ReactNode;

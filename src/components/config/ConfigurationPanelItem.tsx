@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { PlaygroundDeviceSelector } from "@/components/playground/PlaygroundDeviceSelector";
+import { PlaygroundDeviceSelector } from "../playground/PlaygroundDeviceSelector";
 import { TrackToggle } from "@livekit/components-react";
 import { Track } from "livekit-client";
 
